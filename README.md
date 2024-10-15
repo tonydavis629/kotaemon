@@ -175,6 +175,15 @@ Default username / password are: `admin` / `admin`. You can setup additional use
 
 - Check the Resources tab and LLMs and Embeddings and ensure that your `api_key` value is set correctly from your `.env`. file. If it is not set, you can set it here.
 
+## Setup GraphRAG
+
+> [!NOTE]
+> Currently GraphRAG feature only works with OpenAI or Ollama API.
+
+- [*If you are not using Docker installation*], install GraphRAG with `pip install graphrag future`
+- To use GraphRAG retriever feature, make sure to set `GRAPHRAG_API_KEY` environment variables (or in the `.env` file).
+- To use GraphRAG with local models (Ollama), set `USE_CUSTOMIZED_GRAPHRAG_SETTING=true` and tweak your settings in `settings.yaml.example`.
+
 ## Setup local models (for local / private RAG)
 
 See [Local model setup](docs/local_model.md).
